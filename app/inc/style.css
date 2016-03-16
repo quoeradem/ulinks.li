@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+body {
+    background: #fff;
+    margin: 0;
+}
+
+.mui-nav {
+    position: fixed;
+    top: 0;
+    height: 44px !important;
+    min-height: 44px !important;
+    background: rgba(0, 0, 0, 0.80) !important;
+    z-depth: 0px;
+}
+
+.mui-nav h1 {
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    line-height: 44px !important;
+}
+
+.mui-input {
+    width: 400px !important;
+    margin-right: 20px;
+}
+
+.mui-container {
+    text-align: center;
+    padding-top: 140px;
+}
+
+.mui-content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;    
+    background: #ECEFF1;
+    height: 200px;
+    width: 640px;
+    z-depth: 3px;
+}
+
+.mui-icon-button {
+    margin-top: -8px;
+}

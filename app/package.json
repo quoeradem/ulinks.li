@@ -1,0 +1,29 @@
+{
+  "name": "ulinks.li",
+  "version": "1.0.0",
+  "description": "A simple link shortening frontend.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Trevor Kulhanek",
+  "license": "MIT",
+  "dependencies": {
+    "material-ui": "^0.14.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-tap-event-plugin": "^0.2.2",
+    "validator": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.6.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-runtime": "^6.6.1",
+    "webpack": "^1.12.12"
+  }
+}

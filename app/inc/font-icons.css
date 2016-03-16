@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'mui-icons';
+    src: url('fonts/mui-icons.woff?m56om9') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="mui-icon-"], [class*=" mui-icon-"] {
+	font-family: 'mui-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.mui-icon-github:before {
+    content: "\e900";
+}
