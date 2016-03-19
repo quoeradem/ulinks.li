@@ -22,6 +22,7 @@ class Main extends React.Component {
             value: '',
             error: '',
             open: false,
+            disabled: true
         };
     };
     
@@ -33,6 +34,7 @@ class Main extends React.Component {
         this.setState({
             value: event.target.value,
             error: '',
+            disabled: !event.target.value
         });
     };
     
@@ -58,7 +60,7 @@ class Main extends React.Component {
                 data    : {"longUrl": this.state.value},
                 dataType: "json",
                 success: function(data) {
-                    this.setState({value: data.id, open: true});
+                    this.setState({value: data.id, open: true, disabled: true});
                     this.refs.textinput._getInputNode().select();
                 }.bind(this),
             });
@@ -92,7 +94,7 @@ class Main extends React.Component {
                 <RaisedButton
                     label="shorten"
                     primary={true}
-                    disabled={!this.state.value}
+                    disabled={this.state.disabled}
                     onTouchTap={this.handleTouchTap}
                 />
             </Paper>
