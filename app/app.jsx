@@ -63,6 +63,10 @@ class Main extends React.Component {
                     this.setState({value: data.id, open: true, disabled: true});
                     this.refs.textinput._getInputNode().select();
                 }.bind(this),
+                complete: function(xhr) {
+                    if(xhr.status != 200)
+                        this.setState({error: xhr.responseText});
+                }.bind(this),
             });
         }
     };
